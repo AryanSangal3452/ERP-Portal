@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f7fb" />
+  <title>Northstar Academy · School ERP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <section class="login-screen" id="loginScreen">
+    <div class="login-brand"><span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3.8 23.9 15l11.8-3.6-7.2 10 9 8.4-12.2-.7L20 40l-5.3-11-12.2.8 9-8.4-7.2-10L16.1 15z" fill="currentColor"/><circle cx="20" cy="20" r="4.3" fill="#fff"/></svg></span><span><strong>northstar</strong><small>ACADEMY PORTAL</small></span></div>
+    <div class="login-layout"><div class="login-intro"><span class="login-kicker"><i></i> YOUR SCHOOL, IN SYNC</span><h1>Every school day,<br><em>all in one place.</em></h1><p>A calmer way to stay connected to learning, people, and everything happening at Northstar Academy.</p><div class="login-quote"><div class="login-avatars"><i>AM</i><i>PD</i><i>AK</i></div><span>One campus. Every perspective.</span></div><div class="login-decoration deco-one"></div><div class="login-decoration deco-two"></div></div>
+      <div class="login-card"><div class="login-card-heading"><span class="login-card-icon">✳</span><span class="login-year">ACADEMIC YEAR 2026–27</span><h2>Welcome back</h2><p>Sign in to your school workspace.</p></div>
+        <form id="loginForm"><label class="login-label" for="schoolSelect">School</label><div class="login-input-wrap select-wrap"><span>⌂</span><select id="schoolSelect"><option value="northstar-west">Northstar Academy · West Campus</option><option value="northstar-east">Northstar Academy · East Campus</option><option value="greenfield-main">Greenfield Public School · Main Campus</option></select></div><label class="login-label" for="loginEmail">Login ID or email</label><div class="login-input-wrap"><span>♙</span><input id="loginEmail" type="text" autocomplete="username" required value="NS2401" placeholder="Enter your login ID"></div><label class="login-label" for="loginPassword">Password</label><div class="login-input-wrap"><span>⌑</span><input id="loginPassword" type="password" autocomplete="current-password" required value="northstar123" placeholder="Enter your password"><button class="password-toggle" type="button" id="togglePassword">Show</button></div><div class="login-options"><label><input type="checkbox" checked> Remember me</label><a href="#forgot" id="forgotPassword">Forgot password?</a></div><button class="login-submit" type="submit">Sign in to portal <span>→</span></button><div class="login-error" id="loginError" role="alert"></div></form>
+        <div class="demo-note"><span>✦</span><div><b>Demo access</b><small>Student: <code>NS2401</code> · Teacher: <code>FAC-018</code> · Principal: <code>ADMIN-001</code><br>Password: <code>northstar123</code></small></div></div><div class="login-security"><span>♧</span> Northstar school workspace <i>·</i> Need help? Contact your administrator</div>
+      </div></div>
+    <footer class="login-footer"><span>© 2026 Northstar Academy</span><span>Thoughtfully made for better school days <b>✳</b></span></footer>
+  </section>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="Northstar Academy home">
+        <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3.8 23.9 15l11.8-3.6-7.2 10 9 8.4-12.2-.7L20 40l-5.3-11-12.2.8 9-8.4-7.2-10L16.1 15z" fill="currentColor"/><circle cx="20" cy="20" r="4.3" fill="#fff"/></svg></span>
+        <span><strong>northstar</strong><small>ACADEMY PORTAL</small></span>
+      </a>
+      <div class="school-switch"><span class="switch-icon">N</span><span><b>Northstar Academy</b><small>West Campus</small></span><span class="chevron">⌄</span></div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-item active" href="#overview" data-page="Overview"><span class="nav-icon">◫</span><span>Overview</span></a>
+        <a class="nav-item" href="#students" data-page="Students"><span class="nav-icon">♧</span><span>Students</span><span class="nav-count">1,248</span></a>
+        <a class="nav-item" href="#faculty" data-page="Faculty"><span class="nav-icon">♙</span><span>Faculty</span></a>
+        <a class="nav-item" href="#attendance" data-page="Attendance"><span class="nav-icon">◷</span><span>Attendance</span></a>
+        <a class="nav-item" href="#academics" data-page="Academics"><span class="nav-icon">▤</span><span>Academics</span></a>
+        <a class="nav-item" href="#timetable" data-page="Timetable"><span class="nav-icon">▦</span><span>Timetable</span></a>
+        <a class="nav-item" href="#fees" data-page="Fees & finance"><span class="nav-icon">＄</span><span>Fees & finance</span></a>
+        <a class="nav-item" href="#transport" data-page="Transport"><span class="nav-icon">▱</span><span>Transport</span></a>
+      </nav>
+      <div class="nav-label management-label">MANAGEMENT</div>
+      <nav class="main-nav" aria-label="Management navigation">
+        <a class="nav-item" href="#announcements" data-page="Announcements"><span class="nav-icon">♧</span><span>Announcements</span></a>
+        <a class="nav-item" href="#reports" data-page="Reports"><span class="nav-icon">▥</span><span>Reports</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-art">✳</span><b>Need a hand?</b><p>Our support team is always happy to help.</p><button id="supportBtn">Get support <span>↗</span></button></div>
+        <a class="nav-item settings-link" href="#settings" data-page="Settings"><span class="nav-icon">⚙</span><span>Settings</span></a>
+        <div class="user-profile"><div class="avatar avatar-user">AM</div><div><b>Arjun Mehta</b><small>School administrator</small></div><button class="more-btn" aria-label="Profile options">···</button></div>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuBtn" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> <b id="crumb">Overview</b></div>
+        <div class="topbar-actions">
+          <label class="searchbox"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search anything..." aria-label="Search anything"/><kbd>⌘ K</kbd></label>
+          <button class="icon-button notification-btn" aria-label="Notifications">♧<i></i></button>
+          <div class="top-divider"></div>
+          <button class="date-button"><span>▣</span> Friday, 24 May 2024 <span class="chevron">⌄</span></button>
+          <button class="logout-button" id="logoutBtn">Sign out <span>↗</span></button>
+        </div>
+      </header>
+      <div class="page-wrap">
+        <section class="welcome-row"><div><div class="eyebrow">FRIDAY, MAY 24, 2024 <span class="live-dot"></span> SCHOOL IS IN SESSION</div><h1>Good morning, Arjun <span class="wave">✦</span></h1><p>Here’s what’s happening across your campus today.</p></div><button class="primary-button" id="reportBtn"><span>＋</span> Create report</button></section>
+        <section class="stats-grid" aria-label="School statistics">
+          <article class="stat-card"><div class="stat-top"><span>Total students</span><span class="stat-icon lilac">♧</span></div><div class="stat-number">1,248 <span class="trend up">↗ 4.8%</span></div><div class="stat-foot">Compared to last academic year</div><div class="sparkline purple"><svg viewBox="0 0 120 35" preserveAspectRatio="none"><path d="M0 29 C12 27 14 14 25 19 S41 29 50 17 65 23 75 13 88 20 97 11 108 16 120 3"/></svg></div></article>
+          <article class="stat-card"><div class="stat-top"><span>Present today</span><span class="stat-icon mint">◷</span></div><div class="stat-number">1,186 <span class="trend up">↗ 2.1%</span></div><div class="stat-foot">94.9% attendance rate</div><div class="sparkline green"><svg viewBox="0 0 120 35" preserveAspectRatio="none"><path d="M0 25 C10 27 15 17 24 20 S38 10 49 16 63 8 73 13 88 4 98 10 110 3 120 5"/></svg></div></article>
+          <article class="stat-card"><div class="stat-top"><span>Faculty members</span><span class="stat-icon peach">♙</span></div><div class="stat-number">86 <span class="trend up">↗ 3 new</span></div><div class="stat-foot">Across 12 departments</div><div class="sparkline orange"><svg viewBox="0 0 120 35" preserveAspectRatio="none"><path d="M0 26 C12 20 16 25 25 17 S38 21 48 12 63 18 74 9 88 17 99 8 110 12 120 3"/></svg></div></article>
+          <article class="stat-card"><div class="stat-top"><span>Fee collection</span><span class="stat-icon blue">＄</span></div><div class="stat-number">₹18.4L <span class="trend up">↗ 8.2%</span></div><div class="stat-foot">This month · 78% of target</div><div class="sparkline blue-line"><svg viewBox="0 0 120 35" preserveAspectRatio="none"><path d="M0 30 C10 22 16 26 25 22 S39 25 48 15 63 20 73 12 88 14 97 9 110 12 120 3"/></svg></div></article>
+        </section>
+        <section class="content-grid">
+          <article class="panel attendance-panel"><div class="panel-heading"><div><h2>Attendance overview</h2><p>Daily attendance across all grades</p></div><button class="select-button" id="periodBtn">This week <span>⌄</span></button></div><div class="chart-summary"><strong>94.9%</strong><span class="trend up">↗ 2.4%</span><small>vs. last week</small></div><div class="chart-area"><div class="y-labels"><span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span></div><div class="chart-main"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div><div class="chart-columns"><div class="day-col"><div class="bar-pair"><i style="height:79%"></i><i class="bar-muted" style="height:70%"></i></div><span>Mon</span></div><div class="day-col"><div class="bar-pair"><i style="height:86%"></i><i class="bar-muted" style="height:74%"></i></div><span>Tue</span></div><div class="day-col"><div class="bar-pair"><i style="height:73%"></i><i class="bar-muted" style="height:65%"></i></div><span>Wed</span></div><div class="day-col"><div class="bar-pair"><i style="height:91%"></i><i class="bar-muted" style="height:80%"></i></div><span>Thu</span></div><div class="day-col today-col"><div class="bar-pair"><i style="height:95%"></i><i class="bar-muted" style="height:83%"></i></div><span>Fri</span></div></div></div></div><div class="chart-legend"><span><i></i> Present</span><span><i></i> Absent</span><span class="chart-note">Updated 10 min ago</span></div></article>
+          <article class="panel schedule-panel"><div class="panel-heading"><div><h2>Today’s schedule</h2><p>Friday, 24 May <span class="schedule-today">TODAY</span></p></div><button class="text-link" id="scheduleLink">Full timetable <span>↗</span></button></div><div class="timeline"><div class="timeline-row"><div class="time">09:00</div><div class="timeline-line"><i class="dot violet-dot"></i></div><div class="event-card"><div class="event-title"><b>Morning assembly</b><span class="event-tag all-school">ALL SCHOOL</span></div><small>School auditorium · Grades 1–12</small></div></div><div class="timeline-row"><div class="time">10:30</div><div class="timeline-line"><i class="dot blue-dot"></i></div><div class="event-card"><div class="event-title"><b>Science fair setup</b><span class="event-tag academics">ACADEMICS</span></div><small>Innovation lab · Grades 8–10</small></div></div><div class="timeline-row"><div class="time">12:15</div><div class="timeline-line"><i class="dot orange-dot"></i></div><div class="event-card"><div class="event-title"><b>Parent–teacher meeting</b><span class="event-tag meeting">MEETING</span></div><small>Conference room · Grade 6 parents</small></div></div><div class="timeline-row"><div class="time">14:00</div><div class="timeline-line"><i class="dot green-dot"></i></div><div class="event-card"><div class="event-title"><b>Inter-house football</b><span class="event-tag sports">SPORTS</span></div><small>Main sports ground · Senior school</small></div></div></div></article>
+        </section>
+        <section class="lower-grid">
+          <article class="panel activity-panel"><div class="panel-heading"><div><h2>Recent activity</h2><p>Latest updates from your campus</p></div><button class="text-link" id="activityLink">View all <span>↗</span></button></div><div class="activity-list"><div class="activity-row"><div class="activity-avatar purple-avatar">RS</div><div class="activity-copy"><b>Riya Sharma <span>enrolled a new student</span></b><small>Grade 4 · Admission #NS2481</small></div><time>8 min ago</time><span class="activity-arrow">↗</span></div><div class="activity-row"><div class="activity-avatar yellow-avatar">AK</div><div class="activity-copy"><b>Annual exam schedule <span>was published</span></b><small>Academics · For all grades</small></div><time>32 min ago</time><span class="activity-arrow">↗</span></div><div class="activity-row"><div class="activity-avatar green-avatar">✓</div><div class="activity-copy"><b>Term 2 fee collection <span>reached 78%</span></b><small>Finance · ₹18.4L collected this month</small></div><time>1 hr ago</time><span class="activity-arrow">↗</span></div></div></article>
+          <article class="panel announcements-panel"><div class="panel-heading"><div><h2>Announcements</h2><p>Important messages for your school</p></div><button class="icon-button small-plus" id="announceBtn" aria-label="New announcement">＋</button></div><div class="announcement-card"><div class="announcement-marker"></div><div><div class="announcement-meta"><span class="priority-dot"></span> IMPORTANT <span>·</span> 2 hours ago</div><b>Science Fair 2024 — Registrations open!</b><p>Students can register their projects with their class teachers by May 30.</p><div class="announcement-author"><div class="mini-avatar">PD</div><span>Priya Desai <small>· Principal</small></span></div></div></div><a href="#announcements" class="all-announcements">All announcements <span>→</span></a></article>
+        </section>
+        <footer class="footer"><span>© 2024 Northstar Academy</span><span>Made for better school days <b>✳</b></span><a href="#help">Help center ↗</a></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modalBackdrop"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="modal-symbol">✳</div><h2 id="modalTitle">Create a report</h2><p id="modalCopy">Choose what you’d like to put together.</p><label class="field-label" for="reportType">Report type</label><select id="reportType"><option>Attendance summary</option><option>Student enrollment</option><option>Fee collection</option><option>Faculty overview</option></select><label class="field-label" for="reportRange">Date range</label><select id="reportRange"><option>This month</option><option>This week</option><option>This academic year</option></select><button class="primary-button modal-submit" id="modalSubmit">Generate report <span>→</span></button></section></div>
+  <script src="script.js"></script>
+</body>
+</html>
